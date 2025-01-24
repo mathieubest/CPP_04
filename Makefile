@@ -2,7 +2,8 @@
 # And then push this directory (that is the parent) to GitHub
 
 
-SUBDIRS = ex00
+SUBDIRS = ex00 \
+			ex01
 
 all:
 	@echo "Use 'make fclean' to clean all subdirectories" > /dev/null
