@@ -14,3 +14,10 @@ Brain::Brain(const Brain& other) {
 Brain::~Brain() {
     std::cout << "Destructor called for a brain." << std::endl;
 }
+
+Brain& Brain::operator=(const Brain& other) {
+    if (this != &other) {
+        *this = other;
+    }
+    return *this;
+}

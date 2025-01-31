@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbest <mbest@student.42.fr>                +#+  +:+       +#+        */
+/*   By: mathieu <mathieu@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 15:24:44 by mbest             #+#    #+#             */
-/*   Updated: 2025/01/24 15:55:37 by mbest            ###   ########.fr       */
+/*   Updated: 2025/01/29 18:37:30 by mathieu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 #include "./Animal.hpp"
 
 class Dog : public Animal {
+    private:
+        Brain *brain;
+        
     public:
         // Constructor
         Dog();

@@ -15,6 +15,9 @@ class Brain {
 
         // Destructor
         ~Brain();
+
+        // Overloaded operator
+        Brain& operator=(const Brain& other);
 };
 
 #endif
