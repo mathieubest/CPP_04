@@ -6,7 +6,7 @@
 /*   By: mathieu <mathieu@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 15:24:44 by mbest             #+#    #+#             */
-/*   Updated: 2025/02/02 21:30:16 by mathieu          ###   ########.fr       */
+/*   Updated: 2025/02/02 22:18:10 by mathieu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include "./Animal.hpp"
 #include "./Brain.hpp"
 
-class Dog : public Animal {
+class Dog : public A_Animal {
     private:
         Brain *brain;
         

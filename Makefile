@@ -3,7 +3,8 @@
 
 
 SUBDIRS = ex00 \
-			ex01
+			ex01 \
+			ex02
 
 all:
 	@echo "Use 'make fclean' to clean all subdirectories" > /dev/null

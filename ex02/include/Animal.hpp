@@ -1,38 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mathieu <mathieu@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/24 15:24:44 by mbest             #+#    #+#             */
-/*   Updated: 2025/02/02 21:30:16 by mathieu          ###   ########.fr       */
+/*   Created: 2025/01/24 15:05:07 by mbest             #+#    #+#             */
+/*   Updated: 2025/02/02 22:17:00 by mathieu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-#define DOG_HPP
+#ifndef ANIMAL_HPP
+#define ANIMAL_HPP
 
-#include "./Animal.hpp"
-#include "./Brain.hpp"
+#include <iostream>
+#include <cstring>
 
-class Dog : public Animal {
-    private:
-        Brain *brain;
-        
+class A_Animal {
+    protected:
+        std::string _type;
+
     public:
         // Constructor
-        Dog();
-        Dog(const Dog& other);
+        A_Animal();
+        A_Animal(const A_Animal& other);
 
         // Destructor
-        ~Dog();
+        virtual ~A_Animal();
 
         // Overloaded Operator
-        Dog& operator=(const Dog& other);
+        A_Animal& operator=(const A_Animal& other);
 
         // Public Methods
-        void makeSound() const;
+        virtual void makeSound() const = 0;
+
+        // Getters
+        const std::string& getType(void) const;
+
+        // Setters
+        void setType(const std::string& type);
 };
 
 #endif
