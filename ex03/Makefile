@@ -7,10 +7,7 @@ OBJS_DIR = objs/
 SRCS_DIR = src/
 
 FILES = main.cpp \
-		AAnimal.cpp \
-		Brain.cpp \
-		Cat.cpp \
-		Dog.cpp 
+		AMateria.cpp
 
 SRCS = $(addprefix $(SRCS_DIR), $(FILES))
 OBJS = $(addprefix $(OBJS_DIR), $(FILES:.cpp=.o))

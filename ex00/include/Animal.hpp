@@ -6,7 +6,7 @@
 /*   By: mbest <mbest@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 15:05:07 by mbest             #+#    #+#             */
-/*   Updated: 2025/01/24 16:09:39 by mbest            ###   ########.fr       */
+/*   Updated: 2025/02/12 13:23:35 by mbest            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Animal {
         Animal(const Animal& other);
 
         // Destructor
-        ~Animal();
+        virtual ~Animal();
 
         // Overloaded Operator
         Animal& operator=(const Animal& other);

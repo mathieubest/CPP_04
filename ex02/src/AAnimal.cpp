@@ -1,28 +1,28 @@
 #include "../include/Animal.hpp"
 
-A_Animal::A_Animal() : _type("Unknown") {
+AAnimal::AAnimal() : _type("Unknown") {
     std::cout << "Default constructor called for an animal." << std::endl;
 }
 
-A_Animal::A_Animal(const A_Animal& other) : _type(other._type) {
+AAnimal::AAnimal(const AAnimal& other) : _type(other._type) {
     std::cout << "Copy constructor called for an animal." << std::endl;
 }
 
-A_Animal::~A_Animal() {
+AAnimal::~AAnimal() {
     std::cout << "Destructor called for an animal." << std::endl;
 }
 
-A_Animal& A_Animal::operator=(const A_Animal& other) {
+AAnimal& AAnimal::operator=(const AAnimal& other) {
     if (this != &other) {
         this->_type = other._type;
     }
     return *this;
 }
 
-const std::string& A_Animal::getType() const {
+const std::string& AAnimal::getType() const {
     return this->_type;
 }
 
-void A_Animal::setType(const std::string& type) {
+void AAnimal::setType(const std::string& type) {
     this->_type = type;
 }

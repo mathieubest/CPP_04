@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mathieu <mathieu@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mbest <mbest@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 15:05:07 by mbest             #+#    #+#             */
-/*   Updated: 2025/02/02 22:17:00 by mathieu          ###   ########.fr       */
+/*   Updated: 2025/02/12 14:08:29 by mbest            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,20 @@
 #include <iostream>
 #include <cstring>
 
-class A_Animal {
+class AAnimal {
     protected:
         std::string _type;
 
     public:
         // Constructor
-        A_Animal();
-        A_Animal(const A_Animal& other);
+        AAnimal();
+        AAnimal(const AAnimal& other);
 
         // Destructor
-        virtual ~A_Animal();
+        virtual ~AAnimal();
 
         // Overloaded Operator
-        A_Animal& operator=(const A_Animal& other);
+        AAnimal& operator=(const AAnimal& other);
 
         // Public Methods
         virtual void makeSound() const = 0;

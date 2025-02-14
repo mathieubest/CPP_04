@@ -19,6 +19,14 @@ int main()
         animals[i]->makeSound();
         delete animals[i];
     }
+    const Animal* rand = new Cat();
+    const Animal* ro = new Cat();
+    rand->makeSound();
+    ro->makeSound();
+    delete rand;
+    rand = ro;
+    rand->makeSound();
+    delete ro;
     delete[] animals;
     return 0;
 }
