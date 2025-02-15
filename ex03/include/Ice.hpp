@@ -4,18 +4,15 @@
 #include <iostream>
 #include "./AMateria.hpp"
 
-class Ice : public AMateria {
+class Ice : virtual public AMateria {
     public:
         Ice();
-        Ice(const Ice& other);
+        Ice(const Ice& copy);
         ~Ice();
 
         Ice& operator=(const Ice& other);
 
-        void setType (std::string& type);
-
-        AMateria* clone() const override;
-        void use(ICharacter& target) override;
+        AMateria* clone() const;
 };
 
 #endif

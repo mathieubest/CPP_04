@@ -7,7 +7,11 @@ OBJS_DIR = objs/
 SRCS_DIR = src/
 
 FILES = main.cpp \
-		AMateria.cpp
+		AMateria.cpp \
+		Cure.cpp \
+		Ice.cpp \
+		Character.cpp \
+		MateriaSource.cpp
 
 SRCS = $(addprefix $(SRCS_DIR), $(FILES))
 OBJS = $(addprefix $(OBJS_DIR), $(FILES:.cpp=.o))

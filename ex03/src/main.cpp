@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbest <mbest@student.42.fr>                +#+  +:+       +#+        */
+/*   By: mathieu <mathieu@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/13 15:17:55 by mbest             #+#    #+#             */
-/*   Updated: 2025/02/13 15:17:57 by mbest            ###   ########.fr       */
+/*   Updated: 2025/02/15 23:03:08 by mathieu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 #include "../include/AMateria.hpp"
 #include "../include/Cure.hpp"
 #include "../include/Ice.hpp"
+#include "../include/Character.hpp"
+#include "../include/MateriaSource.hpp"
 #include "../include/ICharacter.hpp"
 #include "../include/IMateriaSource.hpp"
 

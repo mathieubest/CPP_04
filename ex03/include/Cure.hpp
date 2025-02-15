@@ -4,18 +4,15 @@
 #include <iostream>
 #include "./AMateria.hpp"
 
-class Cure : public AMateria{
+class Cure : virtual public AMateria{
     public:
         Cure();
-        Cure(const Cure& other);
+        Cure(const Cure& copy);
         ~Cure();
 
         Cure& operator=(const Cure& other);
 
-        void setType(std::string& type);
-
-        AMateria* clone() const override;
-        void use(ICharacter& target) override;
+        AMateria* clone() const;
 };
 
 #endif
