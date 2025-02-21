@@ -6,7 +6,7 @@
 /*   By: mbest <mbest@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 15:05:07 by mbest             #+#    #+#             */
-/*   Updated: 2025/02/12 14:08:29 by mbest            ###   ########.fr       */
+/*   Updated: 2025/02/21 16:01:46 by mbest            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,30 +14,20 @@
 #define ANIMAL_HPP
 
 #include <iostream>
-#include <cstring>
+#include <string>
 
 class AAnimal {
     protected:
         std::string _type;
 
     public:
-        // Constructor
         AAnimal();
         AAnimal(const AAnimal& other);
-
-        // Destructor
+        AAnimal& operator=(const AAnimal& other);
         virtual ~AAnimal();
 
-        // Overloaded Operator
-        AAnimal& operator=(const AAnimal& other);
-
-        // Public Methods
         virtual void makeSound() const = 0;
-
-        // Getters
         const std::string& getType(void) const;
-
-        // Setters
         void setType(const std::string& type);
 };
 

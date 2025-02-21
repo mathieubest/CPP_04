@@ -10,12 +10,15 @@ class Character : virtual public ICharacter
     private:
         std::string _name;
         AMateria* _inventory[4];
+        AMateria* _floor[4];
 
     public:
+        Character();
         Character(std::string const& name);
         Character(const Character& copy);
-        virtual ~Character();
         Character& operator=(const Character& other);
+        virtual ~Character();
+        
         std::string const& getName() const;
         void equip(AMateria* m);
         void unequip(int idx);

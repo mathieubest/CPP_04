@@ -48,13 +48,14 @@ void MateriaSource::learnMateria(AMateria* m)
         }
     }
     std::cout << "Inventory is full... Couldn't learn " << m->getType() << std::endl;
+    delete m;
 }
 
 AMateria* MateriaSource::createMateria(std::string const& type)
 {
     for (int i = 0; i < 4; i++) {
         if (this->_materias[i] && this->_materias[i]->getType() == type) {
-            std::cout << "Created " << type << " at index " << i << std::endl;
+            std::cout << "Created " << type << std::endl;
             return this->_materias[i]->clone();
         }
     }

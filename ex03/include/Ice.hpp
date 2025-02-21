@@ -4,13 +4,12 @@
 #include <iostream>
 #include "./AMateria.hpp"
 
-class Ice : virtual public AMateria {
+class Ice : public AMateria {
     public:
         Ice();
         Ice(const Ice& copy);
-        ~Ice();
-
         Ice& operator=(const Ice& other);
+        ~Ice();
 
         AMateria* clone() const;
 };

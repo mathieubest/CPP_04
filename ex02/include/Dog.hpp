@@ -6,7 +6,7 @@
 /*   By: mbest <mbest@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 15:24:44 by mbest             #+#    #+#             */
-/*   Updated: 2025/02/12 14:08:56 by mbest            ###   ########.fr       */
+/*   Updated: 2025/02/21 16:08:09 by mbest            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,11 @@ class Dog : public AAnimal {
         Brain *brain;
         
     public:
-        // Constructor
         Dog();
         Dog(const Dog& other);
-
-        // Destructor
+        Dog& operator=(const Dog& other);
         ~Dog();
 
-        // Overloaded Operator
-        Dog& operator=(const Dog& other);
-
-        // Public Methods
         void makeSound() const;
 };
 

@@ -3,19 +3,14 @@
 Ice::Ice()
 {
     this->_type = "ice";
-    std::cout << "Default constructor called for Ice" << std::endl;
 }
 
 Ice::Ice(const Ice& copy)
 {
     *this = copy;
-    std::cout << "Copy constructor called for Ice." << std::endl;
 }
 
-Ice::~Ice()
-{
-    std::cout << "Destructor called for Ice" << std::endl;
-}
+Ice::~Ice() {}
 
 Ice& Ice::operator=(const Ice& other)
 {
@@ -27,6 +22,6 @@ Ice& Ice::operator=(const Ice& other)
 
 AMateria* Ice::clone() const
 {
-    std::cout << "Cloning Ice" << std::endl;
+    // std::cout << "Cloning Ice" << std::endl;
     return new Ice(*this);
 }
