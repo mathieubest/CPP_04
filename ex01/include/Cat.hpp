@@ -9,17 +9,11 @@ class Cat : public Animal {
         Brain* brain;
 
     public:
-        // Constructor
         Cat();
         Cat(const Cat& other);
-
-        // Destructor
-        ~Cat();
-
-        // Overloaded Operator
         Cat& operator=(const Cat& other);
-
-        // Public Methods
+        ~Cat();
+        
         void makeSound() const;
 };
 

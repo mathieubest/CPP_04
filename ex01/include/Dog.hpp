@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mathieu <mathieu@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mbest <mbest@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 15:24:44 by mbest             #+#    #+#             */
-/*   Updated: 2025/02/02 21:30:16 by mathieu          ###   ########.fr       */
+/*   Updated: 2025/02/21 15:57:07 by mbest            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,11 @@ class Dog : public Animal {
         Brain *brain;
         
     public:
-        // Constructor
         Dog();
         Dog(const Dog& other);
-
-        // Destructor
+        Dog& operator=(const Dog& other);
         ~Dog();
 
-        // Overloaded Operator
-        Dog& operator=(const Dog& other);
-
-        // Public Methods
         void makeSound() const;
 };
 

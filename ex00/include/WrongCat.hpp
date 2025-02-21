@@ -5,17 +5,11 @@
 
 class WrongCat : public WrongAnimal {
     public:
-        // Constructor
         WrongCat();
         WrongCat(const WrongCat& other);
-
-        // Destructor
+        WrongCat& operator=(const WrongCat& other);
         ~WrongCat();
 
-        // Overloaded Operator
-        WrongCat& operator=(const WrongCat& other);
-
-        // Public Methods
         void makeSound() const;
 };
 

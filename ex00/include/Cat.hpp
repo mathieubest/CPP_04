@@ -5,17 +5,11 @@
 
 class Cat : public Animal {
     public:
-        // Constructor
         Cat();
         Cat(const Cat& other);
-
-        // Destructor
+        Cat& operator=(const Cat& other);
         ~Cat();
 
-        // Overloaded Operator
-        Cat& operator=(const Cat& other);
-
-        // Public Methods
         void makeSound() const;
 };
 

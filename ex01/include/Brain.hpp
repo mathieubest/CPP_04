@@ -9,15 +9,10 @@ class Brain {
         std::string ideas[100];
     
     public:
-        // Constructor
         Brain();
         Brain(const Brain& other);
-
-        // Destructor
-        ~Brain();
-
-        // Overloaded operator
         Brain& operator=(const Brain& other);
+        ~Brain();
 };
 
 #endif

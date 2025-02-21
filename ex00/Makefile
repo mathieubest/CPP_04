@@ -45,6 +45,7 @@ clean:
 fclean: clean
 	@echo "Cleaning: $(NAME)"
 	@rm -f $(NAME)
+	@rm -f $(WRONG_NAME)
 
 re: fclean all
 

@@ -9,23 +9,13 @@ class WrongAnimal {
         std::string _type;
 
     public:
-        // Constructor
         WrongAnimal();
         WrongAnimal(const WrongAnimal& other);
-
-        // Destructor
-        ~WrongAnimal();
-
-        // Overloaded Operator
         WrongAnimal& operator=(const WrongAnimal& other);
+        virtual ~WrongAnimal();
 
-        // Public Methods
-        void makeSound() const;
-
-        // Getters
+        virtual void makeSound() const;
         const std::string& getType() const;
-
-        // Setters
         void setType(const std::string& type);
 };
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mathieu <mathieu@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mbest <mbest@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 15:05:07 by mbest             #+#    #+#             */
-/*   Updated: 2025/01/24 20:57:18 by mathieu          ###   ########.fr       */
+/*   Updated: 2025/02/21 15:58:32 by mbest            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,23 +21,13 @@ class Animal {
         std::string _type;
 
     public:
-        // Constructor
         Animal();
         Animal(const Animal& other);
-
-        // Destructor
+        Animal& operator=(const Animal& other);
         virtual ~Animal();
 
-        // Overloaded Operator
-        Animal& operator=(const Animal& other);
-
-        // Public Methods
         virtual void makeSound() const;
-
-        // Getters
         const std::string& getType(void) const;
-
-        // Setters
         void setType(const std::string& type);
 };
 
