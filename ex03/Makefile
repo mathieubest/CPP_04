@@ -8,9 +8,9 @@ SRCS_DIR = src/
 
 FILES = main.cpp \
 		AMateria.cpp \
+		Character.cpp \
 		Cure.cpp \
 		Ice.cpp \
-		Character.cpp \
 		MateriaSource.cpp
 
 SRCS = $(addprefix $(SRCS_DIR), $(FILES))
