@@ -6,7 +6,7 @@
 /*   By: mbest <mbest@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/21 16:15:05 by mbest             #+#    #+#             */
-/*   Updated: 2025/02/21 17:44:18 by mbest            ###   ########.fr       */
+/*   Updated: 2025/02/24 17:41:45 by mbest            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ Character::~Character()
     for (int i = 0; i < 4; i++) {
         if (this->_inventory[i]) {
             delete this->_inventory[i];
+            // this->_inventory[i] = NULL;
         }
         if (this->_floor[i]) {
             delete this->_floor[i];
